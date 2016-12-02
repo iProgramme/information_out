@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>用户设置</title>
+    <link href="../css/main.css" rel="stylesheet">
+</head>
+<body>
+	<div class="main">
+		<!-- 主体内容 -->
+		<div class="content add_example1">
+		    <div class="putin clear">
+		        <ul>
+		            <li>
+		                <span>类别名称：</span>
+		                <input type="text" name="">
+		            </li>
+		            <li>
+		                <span>状态(启用/禁用)：</span>
+		                <select>
+		                    <option>启用</option>
+		                    <option>禁用</option>
+		                </select>
+		            </li>
+		        </ul>
+		        <a href="javascript:void(0)" class="search">搜索</a>
+		        <a href="main19_add.html" class="add_person">添加</a>
+		    </div>
+		    <div class="table19">
+		        <table>
+		            <tr>
+		                <th style="">编号</th>
+		                <th>登录名</th>
+		                <th>真实姓名</th>
+		                <th>最后登录IP</th>
+		                <th>最后登录时间</th>
+		                <th>启用</th>
+		                <th>所属社区</th>
+		                <th>操作</th>
+		            </tr>
+		            <tr>
+		                <td>123</td>
+		                <td>kdjfhakfhj</td>
+		                <td>德莱文</td>
+		                <td>192.168.1.1</td>
+		                <td>2016-10-10 15:13:56</td>
+		                <td>好的</td>
+		                <td>地球</td>
+		                <td>
+		                    <a href="javascript:void(0)" class="open_change">操作</a>
+		                    <p class="disN">
+		                        <a href="javascript:void(0)">操作</a>
+		                        <a href="javascript:void(0)">删除</a>
+		                    </p>
+		                </td>
+		            </tr>
+		            <tr>
+		                <td>123</td>
+		                <td>kdjfhakfhj</td>
+		                <td>德莱文</td>
+		                <td>192.168.1.1</td>
+		                <td>2016-10-10 15:13:56</td>
+		                <td>好的</td>
+		                <td>地球</td>
+		                <td>
+		                    <a href="javascript:void(0)" class="open_change">操作</a>
+		                    <p class="disN">
+		                        <a href="javascript:void(0)">操作</a>
+		                        <a href="javascript:void(0)">删除</a>
+		                    </p>
+		                </td>
+		            </tr>
+		            <tr>
+		                <td>123</td>
+		                <td>kdjfhakfhj</td>
+		                <td>德莱文</td>
+		                <td>192.168.1.1</td>
+		                <td>2016-10-10 15:13:56</td>
+		                <td>好的</td>
+		                <td>地球</td>
+		                <td>
+		                    <a href="javascript:void(0)" class="open_change">操作</a>
+		                    <p class="disN">
+		                        <a href="javascript:void(0)">操作</a>
+		                        <a href="javascript:void(0)">删除</a>
+		                    </p>
+		                </td>
+		            </tr>
+		        </table>
+		        
+		    </div>
+		</div>
+		<!-- 主体内容 -->
+	</div>
+	<script src="../js/jquery-1.8.1.min.js"></script>
+	<script type="text/javascript">
+	    // 打开表格的操作
+	    $(".open_change").click(function () {
+	        if ($(this).next('p').is(':hidden')) {
+	            $("td p").hide();
+	            $("td").css('z-index', '1');
+	            $(this).next('p').show();
+	            $(this).parents('td').css('z-index', '2');
+	            $(".open_change").removeAttr('style');
+	            $(this).css({
+	            	background: 'url(../img/index_load2.png) no-repeat 69px -54px',
+	            	borderColor: '#c2c2c2',
+	            });
+	        }else{
+	            $("td p").hide();
+	            $("td").css('z-index', '1');
+	            $(".open_change").removeAttr('style')
+	        }
+	    })
+	  
+	</script>
+</body>
+</html>

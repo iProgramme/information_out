@@ -550,7 +550,7 @@
   overflow: hidden;
   white-space: nowrap;
   margin: 0;
-  padding: 0;
+  padding: 0;width: 180px!important;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;

@@ -5,9 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- 选择时间 -->
     <link href="../css/easyui.css" rel="stylesheet">
     <link href="../css/icon.css" rel="stylesheet">
     <link href="../css/demo.css" rel="stylesheet">
+    <!-- 选择时间 -->
+	<!-- 上传图片 -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap1.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style1.css">
+	<link rel="stylesheet" href="../css/ssi-uploader1.css"/>
+	<!-- 上传图片 -->
     <link href="../css/main.css" rel="stylesheet">
 	<title>一级菜单第一个</title>
 </head>
@@ -15,7 +22,7 @@
 	<div class="main">
 		<div class="content">
 			<div class="content_title"><p>发布标题</p></div>
-			<div class="input_char40"><input type="text" name="" placeholder="请在这里输入标题" maxlength="40"><span>0/40</span></div>
+			<div class="input_char40"><input type="text" name="" placeholder="请在这里输入标题" maxlength="40">&nbsp;&nbsp;<span>0/40</span></div>
 		</div>
 		<div class="content">
 			<div class="content_title"><p>发布标签</p></div>
@@ -34,29 +41,103 @@
 		</div>
 		<div class="content">
 			<div class="content_title"><p>投票主题</p></div>
-			<div class="input_char20"><input type="text" name="" placeholder="请在这里输入标题" maxlength="20"><span>0/20</span></div>
+			<div class="input_char20"><input type="text" name="" placeholder="请在这里输入标题" maxlength="20">&nbsp;&nbsp;<span>0/20</span></div>
 		</div>
 		<div class="content">
 			<div class="content_title"><p>截至时间</p></div>
-			<div class="input_char20 easyui-panel"><input class="easyui-datetimebox" label="Select DateTime:" labelPosition="top" value="11/11/2016 11:11:11"></div>
+			<div class="input_char20 easyui-panel">
+				<input class="easyui-datebox" label="" labelPosition="top" value="10/22/2016">
+				<select class="time_select">
+					<option>00</option>
+					<option>01</option>
+					<option>02</option>
+					<option>03</option>
+					<option>04</option>
+					<option>05</option>
+					<option>06</option>
+					<option>07</option>
+					<option>08</option>
+					<option>09</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					<option>21</option>
+					<option>22</option>
+					<option>23</option>
+				</select>
+				<span>&nbsp;&nbsp;时</span>
+				<select class="time_select">
+					<option>00</option>
+					<option>05</option>
+					<option>10</option>
+					<option>15</option>
+					<option>20</option>
+					<option>25</option>
+					<option>30</option>
+					<option>35</option>
+					<option>40</option>
+					<option>45</option>
+					<option>50</option>
+					<option>55</option>
+				</select>
+				<span>&nbsp;&nbsp;分</span>
+			</div>
 		</div>
 		<div class="content content1">
-			<div class="content_title"><p>问题一</p></div>
-			<div class="input_char20">
-				<span>标题</span>
-				<input type="text" name="">
+			<div class="content_title">
+				<p>问题&nbsp;&nbsp;1</p>
+				<div class="right10">
+					<a href="javascript:void(0)" class="open_issue">收起</a>
+				</div>
 			</div>
-			<div class="input_char">
-				<label>
-					<input type="radio" name="radio">
-					<span>单选</span>
-				</label>
-				<label>
-					<input type="radio" name="radio">
-					<span>单选</span>
-				</label>
-				<span>多选</span><input type="text" name=""><span>项</span>
-			</div>
+			<div class="issue_toggle">
+				<div class="input_char20">
+					<span class="input_title">标题</span>
+					<input type="text" name="">&nbsp;&nbsp;
+					<span>0/20</span>
+				</div>
+				<div class="input_char input_question">
+					<label>
+						<input type="radio" name="radio" checked>
+						<span class="radio_active">单选</span>
+					</label>
+					<label>
+						<input type="radio" name="radio">
+						<span>多选</span>
+					</label>
+					<span>多选&nbsp;&nbsp;</span><input type="text" name=""><span>&nbsp;&nbsp;项</span>
+				</div>
+				<div class="input_char20 input_char21">
+					<span class="input_title">选项&nbsp;&nbsp;1</span>
+					<input type="text" name="" maxlength="20"><span class="left-45">0/20</span>
+					<input type="file" multiple id="ssi-upload1" class="ssi_upload_main" />
+				</div>
+				<div class="input_char20 input_char21">
+					<span class="input_title">选项&nbsp;&nbsp;2</span>
+					<input type="text" name="" maxlength="20"><span class="left-45">0/20</span>
+					<input type="file" multiple id="ssi-upload2" class="ssi_upload_main" />
+				</div>
+				<div class="input_char20 input_char21">
+					<span class="input_title">选项&nbsp;&nbsp;3</span>
+					<input type="text" name="" maxlength="20"><span class="left-45">0/20</span>
+					<input type="file" multiple id="ssi-upload3" class="ssi_upload_main" />
+					<a href="javascript:void(0)" class="del_opt">删除</a>
+				</div>
+				<div class="add_input">
+					<a href="javascript:void(0)" class="add_input_a">+添加选项</a>
+				</div>
+			</div>	
+		</div>
+		<div class="add_issue">
+			<a href="javascript:void(0)" class="add_issue1">+添加问题</a>
 		</div>
 		<div class="content_out">
 			<div class="mar_bot18">
@@ -69,6 +150,7 @@
 			<div class="mar_bot18">
 				<a href="javascript:void(0)" class="local_load">从本地选择</a>
 			</div>
+
 			<div class="mar_bot18 tac operate">
 				<a href="javascript:void(0)" class="operate1">保存</a>
 				<a href="javascript:void(0)" class="operate2">预览</a>
@@ -80,6 +162,13 @@
 
 <script src="../js/jquery-1.8.1.min.js"></script>
 <script src="../js/jquery.easyui.min.js"></script>
+<!-- 上传图片 -->
+<script src="../js/ssi-uploader.js"></script>
+<script type="text/javascript">
+	// 以下是class控制的
+	$('.ssi_upload_main').ssi_uploader({url:'#',maxFileSize:6,allowed:['jpg','gif','txt','png','pdf']});
+	
+</script>
 <script type="text/javascript">
 	$(".input_char40 input").keyup(function () {
 		var length=$(this).val().length;
@@ -91,6 +180,138 @@
 		$(this).next().html(length+'/20');
 		
 	})
+
+	// 展开收起问题
+	$(".open_issue").click(function () {
+		$(this).parents(".content_title").next(".issue_toggle").toggle();
+		if ($(this).text()=="收起") {
+			$(this).html("编辑")
+		}else{
+			$(this).html("收起")
+		}
+	})
+	// 第一部分-----添加选项
+	// ---------------------------添加选项---------------------------
+	$(".add_input_a").click(function () {
+		var num=$(this).parents(".add_input").prev(".input_char20").index();
+		var	div="\<div class=\"input_char20 input_char21\"\> \<span class=\"input_title\"\>选项&nbsp;&nbsp;"+num+"\</span\> \<input type=\"text\" name=\" \" maxlength=\"20\"\>\<span class=\"left-45\"\>0/20\</span\> \<input type=\"file\" multiple id=\"ssi-upload" + num + " \" class=\"ssi_upload_main\" /\> \<a href=\"javascript:void(0)\" class=\"del_opt\"\>删除\</a\>\</div\>";
+
+		$(this).parents(".add_input").before(div);
+		$('.ssi_upload_main').ssi_uploader({url:'#',maxFileSize:6,allowed:['jpg','gif','txt','png','pdf']});
+		// 保证添加的选项，具有删除的点击事件
+		$(".del_opt").click(function () {
+			var num1=$(this).parents(".input_char20").index();
+			$(this).parents(".issue_toggle").children(".input_char21").each(function () {
+				var num2=$(this).index();
+				if (num2>num1) {
+					$(this).children('.input_title').html("选项&nbsp;&nbsp;"+(num2-2))
+				}
+			})
+			$(this).parents(".input_char20").remove();
+		})
+		// 保证添加的选择可以计字数
+		$(".input_char20 input").keyup(function () {
+			var length=$(this).val().length;
+			$(this).next().html(length+'/20');
+		})
+	})
+	// 删除问题里面的选项，后面选项的数字跟着变动
+	$(".del_opt").click(function () {
+		var num3=$(this).parents(".input_char20").index();
+		$(this).parents(".issue_toggle").children(".input_char21").each(function () {
+			var num4=$(this).index();
+			if (num4>num3) {
+				$(this).children('.input_title').html("选项&nbsp;&nbsp;"+(num4-2))
+			}
+		})
+		$(this).parents(".input_char20").remove();
+	})
+	// 切换radio
+	$(".input_question label").click(function () {
+		$(this).parents('.input_question').find('label').find('span').removeClass('radio_active');
+		$(this).children('span').addClass('radio_active')
+	})
+	
+
+	// 第二部分-----添加问题
+	// ---------------------------添加问题---------------------------
+	$(".add_issue1").click(function () {
+		var num5=$(this).parents(".add_issue").prev(".content1").index();
+		// 每一次添加问题都要改问题的顺序和input[type=radio]的name
+		var div2="\<div class=\"content content1\"\> \<div class=\"content_title\"\> \<p\>问题&nbsp;&nbsp;" + (num5-3) + "\</p\> \<div class=\"right10\"\> \<a href=\"javascript:void(0)\" class=\"open_issue\"\>收起\</a\> \<a href=\"javascript:void(0)\" class=\"delect_issue\"\>删除\</a\> \</div\> \</div\> \<div class=\"issue_toggle\"\> \<div class=\"input_char20\"\> \<span class=\"input_title\"\>标题\</span\> \<input type=\"text\" name=\"\"\>&nbsp;&nbsp; \<span\>0/20\</span\> \</div\> \<div class=\"input_char input_question\"\> \<label\> \<input type=\"radio\" name=\"radio " + (num5-3) + "\" checked \> \<span class=\"radio_active\"\>单选\</span\> \</label\> \<label\> \<input type=\"radio\" name=\"radio " + (num5-3) + "\"\> \<span\>多选\</span\> \</label\> \<span\>多选&nbsp;&nbsp;\</span\>\<input type=\"text\" name=\"\"\>\<span\>&nbsp;&nbsp;项\</span\> \</div\> \<div class=\"input_char20 input_char21\"\> \<span class=\"input_title\"\>选项&nbsp;&nbsp;1\</span\> \<input type=\"text\" name=\"\" maxlength=\"20\"\>\<span class=\"left-45\"\>0/20\</span\> \<input type=\"file\" multiple id=\"ssi-upload1\" class=\"ssi_upload_main\" /\> \</div\> \<div class=\"input_char20 input_char21\"\> \<span class=\"input_title\"\>选项&nbsp;&nbsp;2\</span\> \<input type=\"text\" name=\"\" maxlength=\"20\"\>\<span class=\"left-45\"\>0/20\</span\> \<input type=\"file\" multiple id=\"ssi-upload2\" class=\"ssi_upload_main\" /\> \</div\> \<div class=\"input_char20 input_char21\"\> \<span class=\"input_title\"\>选项&nbsp;&nbsp;3\</span\> \<input type=\"text\" name=\"\" maxlength=\"20\"\>\<span class=\"left-45\"\>0/20\</span\> \<input type=\"file\" multiple id=\"ssi-upload3\" class=\"ssi_upload_main\" /\> \<a href=\"javascript:void(0)\" class=\"del_opt\"\>删除\</a\> \</div\> \<div class=\"add_input\"\> \<a href=\"javascript:void(0)\" class=\"add_input_a\"\>+添加选项\</a\> \</div\> \</div\>	 \</div\>";
+		$(".add_issue").before(div2);
+		// 添加问题之后也需要再次启用添加选项的各个操作
+		// 展开收起问题，添加事件用this否则会出现问题
+		$(this).parents(".add_issue").prev(".content1").find(".open_issue").click(function () {
+			$(this).parents(".content_title").next(".issue_toggle").toggle();
+			if ($(this).text()=="收起") {
+				$(this).html("编辑")
+			}else{
+				$(this).html("收起")
+			}
+		})
+		// 改上传图片的插件
+		$('.ssi_upload_main').ssi_uploader({url:'#',maxFileSize:6,allowed:['jpg','gif','txt','png','pdf']});
+		// ---------------------------添加选项---------------------------
+		$(this).parents(".add_issue").prev(".content1").find(".add_input_a").click(function () {
+			var num=$(this).parents(".add_input").prev(".input_char20").index();
+			var	div="\<div class=\"input_char20 input_char21\"\> \<span class=\"input_title\"\>选项&nbsp;&nbsp;"+num+"\</span\> \<input type=\"text\" name=\" \" maxlength=\"20\"\>\<span class=\"left-45\"\>0/20\</span\> \<input type=\"file\" multiple id=\"ssi-upload" + num + " \" class=\"ssi_upload_main\" /\> \<a href=\"javascript:void(0)\" class=\"del_opt\"\>删除\</a\>\</div\>";
+			$(this).parents(".add_input").before(div);
+			$('.ssi_upload_main').ssi_uploader({url:'#',maxFileSize:6,allowed:['jpg','gif','txt','png','pdf']});
+			// 保证添加的选项，具有删除的点击事件
+			$(".del_opt").click(function () {
+				var num1=$(this).parents(".input_char20").index();
+				$(this).parents(".issue_toggle").children(".input_char21").each(function () {
+					var num2=$(this).index();
+					if (num2>num1) {
+						$(this).children('.input_title').html("选项&nbsp;&nbsp;"+(num2-2))
+					}
+				})
+				$(this).parents(".input_char20").remove();
+			})
+			// 保证添加的选择可以计字数
+			$(".input_char20 input").keyup(function () {
+				var length=$(this).val().length;
+				$(this).next().html(length+'/20');
+			})
+		})
+		// 切换radio
+		$(".input_question label").click(function () {
+			$(this).parents('.input_question').find('label').find('span').removeClass('radio_active');
+			$(this).children('span').addClass('radio_active')
+		})
+		// 删除问题里面的选项，后面选项的数字跟着变动
+		$(".del_opt").click(function () {
+			var num3=$(this).parents(".input_char20").index();
+			$(this).parents(".issue_toggle").children(".input_char21").each(function () {
+				var num4=$(this).index();
+				if (num4>num3) {
+					$(this).children('.input_title').html("选项&nbsp;&nbsp;"+(num4-2))
+				}
+			})
+			$(this).parents(".input_char20").remove();
+		})
+		// 点击删除问题，下面的选项跟着动。注意这个地方也要用this来添加事件，否则每一次“添加问题”都会给之前的所有删除按钮添加一次事件，导致删除的时候每次都会多删很多的问题
+		$(this).parents(".add_issue").prev(".content1").find(".delect_issue").click(function () {
+			var num6=$(this).parents(".content1").index()-4;
+			$(".content1").each(function () {
+				var num7=$(this).index()-3;
+				if (num7>num6) {
+					$(this).children('.content_title').children('p').html("问题&nbsp;&nbsp;"+(num7-2))
+				}
+			})
+			if(num6>0){$(this).parents(".content1").remove();}
+		})
+		
+		// 之后的点击预览，要放这个下面，其实点击之后打开无数个页面也不要紧。。。反正点关闭的时候全部关掉就是了。。记得把外框和关闭按钮放外面
+		$(".operate2").click(function () {
+			var haha="\<div class=\"woca\"\>后面有预览的时候再写\</div\>"
+			$("body").prepend(haha);
+			if ($(".woca").index()>1) {}
+			
+		})
+	})
 </script>
+
 </body>
 </html>
