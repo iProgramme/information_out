@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- 选择时间 -->
+    <link href="../css/easyui.css" rel="stylesheet">
+    <link href="../css/icon.css" rel="stylesheet">
+    <link href="../css/demo.css" rel="stylesheet">
+    <!-- 选择时间 -->
+	<!-- 上传图片 -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap1.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style1.css">
+	<link rel="stylesheet" href="../css/ssi-uploader1.css"/>
+	<!-- 上传图片 -->
+    <link href="../css/main.css" rel="stylesheet">
+	<title>一级菜单第一个</title>
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			<div class="content_title"><p>发布标题</p></div>
+			<div class="input_char40"><input type="text" name="" placeholder="请在这里输入标题" maxlength="40">&nbsp;&nbsp;<span>0/40</span></div>
+		</div>
+		<div class="content">
+			<div class="content_title"><p>发布专栏主题</p></div>
+			<div class="select_char">
+				<select>
+					<option>英语</option>
+					<option>音乐</option>
+					<option>卡解释多好</option>
+					<option>卡解释多好</option>
+				</select>
+			</div>
+		</div>
+		<div class="content">
+			<div class="content_title"><p>所属专栏</p></div>
+			<div class="select_char">
+				<select>
+					<option>已有1</option>
+					<option>已有2</option>
+					<option>卡解释多好</option>
+					<option>卡解释多好</option>
+				</select>
+			</div>
+		</div>
+		<div class="content">
+			<div class="content_title"><p>发布标签</p></div>
+			<div class="select_char">
+				<select>
+					<option>卡解释多好</option>
+					<option>卡解释多好</option>
+					<option>卡解释多好</option>
+					<option>卡解释多好</option>
+				</select>
+			</div>
+		</div>
+		<div class="content">
+			<div class="content_title"><p>发布编辑</p></div>
+			<div class="content_part"><div style="width: 100%;height:400px">现在中间随便添一点</div></div>
+		</div>
+		
+		<div class="content_out">
+			<div class="mar_bot18">
+				<span class="bold wid100">发布编辑样式</span>
+			</div>
+			<div class="mar_bot18">
+				<span class="bold">封面</span>
+				<span class="grey">*建议尺寸：540*438像素</span>
+			</div>
+			<div class="mar_bot18">
+				<input type="file" multiple id="ssi-upload1" class="ssi_upload_main local_load" />
+			</div>
+
+			<div class="mar_bot18 tac operate">
+				<a href="javascript:void(0)" class="operate1">保存</a>
+				<a href="javascript:void(0)" class="operate2">预览</a>
+				<a href="javascript:void(0)" class="operate3">发布</a>
+			</div>
+			
+		</div>
+	</div>
+
+<script src="../js/jquery-1.8.1.min.js"></script>
+<script src="../js/jquery.easyui.min.js"></script>
+<!-- 上传图片 -->
+<script src="../js/ssi-uploader.js"></script>
+<script type="text/javascript">
+	// 以下是class控制的
+	$('.ssi_upload_main').ssi_uploader({url:'#',maxFileSize:6,allowed:['jpg','gif','txt','png','pdf']});
+	
+</script>
+<script type="text/javascript">
+	$(".input_char40 input").keyup(function () {
+		var length=$(this).val().length;
+		$(this).next().html(length+'/40');
+		
+	})
+	$(".input_char20 input").keyup(function () {
+		var length=$(this).val().length;
+		$(this).next().html(length+'/20');
+		
+	})
+
+	// 展开收起问题
+	$(".open_issue").click(function () {
+		$(this).parents(".content_title").next(".issue_toggle").toggle();
+		if ($(this).text()=="收起") {
+			$(this).html("编辑")
+		}else{
+			$(this).html("收起")
+		}
+	})
+	
+</script>
+
+</body>
+</html>
