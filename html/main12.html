@@ -166,8 +166,12 @@
 <script src="../js/ssi-uploader.js"></script>
 <script type="text/javascript">
 	// 以下是class控制的
-	$('.ssi_upload_main').ssi_uploader({url:'#',maxFileSize:6,allowed:['jpg','gif','txt','png','pdf']});
-	
+	$('.ssi_upload_main').ssi_uploader({url:'#',maxFileSize:6,allowed:['jpg','gif','txt','png','pdf'],beforeUpload:function () {
+		console.log("准备")
+	}});
+	$('.ssi_upload_main').on('beforeUpload.ssi-upload',function () {
+		console.log("准备")
+	})
 </script>
 <script type="text/javascript">
 	$(".input_char40 input").keyup(function () {
