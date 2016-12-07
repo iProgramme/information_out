@@ -61,30 +61,7 @@
 			<div class="content_title"><p>发布编辑</p></div>
 			<div class="content_part"><div style="width: 100%;height:400px">现在中间随便添一点</div></div>
 		</div>
-		<div class="content">
-			<!-- 投票 -->
-			<div class="ticket">
-				<p class="ticket_title"><i class="ticket1"></i><span>我要报名</span><i class="ticket2"></i></p>
-				<div class="ticket_main">
-					<p class="t_title">标题标题标题标题</p>
-					<dl class="t_dl">
-						<dt>姓名</dt>
-						<dd><input type="text" name=""></dd>
-						<dt>学号</dt>
-						<dd><input type="text" name=""></dd>
-						<dt>学院</dt>
-						<dd><input type="text" name=""></dd>
-						<dt>问题&nbsp;&nbsp;1</dt>
-						<dd><input type="text" name=""></dd>
-						<dt>问题&nbsp;&nbsp;2</dt>
-						<dd><input type="text" name=""><a href="javascript:void(0)" class="delect14">删除问题</a></dd>
-						
-						<dd><a href="javascript:void(0)" class="add14">+添加问题</a></dd>
-					</dl>
-				</div>
-			</div>
-			<!-- 投票 -->
-		</div>
+		
 		<div class="content_out">
 			<div class="mar_bot18">
 				<span class="bold wid100">发布编辑样式</span>
@@ -129,36 +106,36 @@
 		
 	})
 
-	// 删除问题
-	$(".delect14").click(function () {
-		var num1=$(this).parents('dd').index();
-		$(".t_dl dt").each(function () {
-			var num2=$(this).index();
-			if (num2>num1) {
-				$(this).html("<dt>问题&nbsp;&nbsp;" + ( num2/2 - 3) + "</dt>")
-			}
-		})
-		$(this).parents('dd').prev('dt').remove();
-		$(this).parents('dd').remove()
-	})
-	// 添加问题
-	$(".add14").click(function () {
-		var num3=($(this).parents('dd').index())/2-2;
-		var question="\<dt\>问题&nbsp;&nbsp;"+num3+"\</dt\>\<dd\>\<input type=\"text\" name=\"\"\>\<a href=\"javascript:void(0)\" class=\"delect14\"\>删除问题\</a\>\</dd\>"
-		$(this).parents('dd').before(question);
-		// 删除问题
-		$(this).parents('dd').prev('dd').find(".delect14").click(function () {
-			var num1=($(this).parents('dd').index()+1)/2;
-			$(".t_dl dt").each(function () {
-				var num2=$(this).index();
-				if (num2>num1) {
-					$(this).html("问题&nbsp;&nbsp;" + ( num2/2 - 3));
-				}
-			})
-			$(this).parents('dd').prev('dt').remove();
-			$(this).parents('dd').remove()
-		})
-	})
+	// // 删除问题
+	// $(".delect14").click(function () {
+	// 	var num1=$(this).parents('dd').index();
+	// 	$(".t_dl dt").each(function () {
+	// 		var num2=$(this).index();
+	// 		if (num2>num1) {
+	// 			$(this).html("<dt>问题&nbsp;&nbsp;" + ( num2/2 - 3) + "</dt>")
+	// 		}
+	// 	})
+	// 	$(this).parents('dd').prev('dt').remove();
+	// 	$(this).parents('dd').remove()
+	// })
+	// // 添加问题
+	// $(".add14").click(function () {
+	// 	var num3=($(this).parents('dd').index())/2-2;
+	// 	var question="\<dt\>问题&nbsp;&nbsp;"+num3+"\</dt\>\<dd\>\<input type=\"text\" name=\"\"\>\<a href=\"javascript:void(0)\" class=\"delect14\"\>删除问题\</a\>\</dd\>"
+	// 	$(this).parents('dd').before(question);
+	// 	// 删除问题
+	// 	$(this).parents('dd').prev('dd').find(".delect14").click(function () {
+	// 		var num1=($(this).parents('dd').index()+1)/2;
+	// 		$(".t_dl dt").each(function () {
+	// 			var num2=$(this).index();
+	// 			if (num2>num1) {
+	// 				$(this).html("问题&nbsp;&nbsp;" + ( num2/2 - 3));
+	// 			}
+	// 		})
+	// 		$(this).parents('dd').prev('dt').remove();
+	// 		$(this).parents('dd').remove()
+	// 	})
+	// })
 	
 </script>
 

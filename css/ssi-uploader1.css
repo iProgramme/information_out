@@ -89,7 +89,7 @@
 .ssi-previewBox {
   float: left;
   width: 100%;
-  color: #ccc;position: relative;left: -281px;margin-top: 15px;
+  color: #ccc;position: relative;left: -271px;margin-top: 15px;
 }
 
 .ssi-dropZonePreview {
@@ -516,4 +516,4 @@ span.ssi-InputLabel input[type="file"] {
   left: 61px;
 }
 
-.ssi-uploader{position: relative;margin-left: 340px;max-width: 500px;margin-top: -35px}
+.ssi-uploader{position: relative;margin-left: 375px;max-width: 500px;margin-top: -35px}
