@@ -20,6 +20,7 @@ area{outline:none;font-family: "Microsoft Yahei"}
 .bold{font-weight: bold;}
 .wid100{width: 100%}
 .grey{color: #6d6d6d}
+.grey2{color: #555;font-weight: normal;}
 .mar_bot18{margin-bottom: 18px;}
 .tac{text-align: center;}
 .clear,.cf{clear:both;zoom:1;overflow:hidden;}
@@ -77,7 +78,10 @@ iframe{background-color: #f3f5f8;}
 .content{background-color: #fff;padding: 22px 10px 0px;margin-bottom: 16px;}
 .content_title p{border-left: 4px solid #88abd1;padding-left: 20px;font-size: 16px;font-weight: bold;}
 .content_title{padding-bottom: 22px;}
-.input_char40,.input_char20,.input_char,.select_char,.content_part,.content_out,.add_input{margin-left: 23px;padding-bottom: 25px;position: relative;}
+.input_char40,.input_char20,.input_char,.select_char,.content_part,.content_out,.add_input,.input_char22{margin-left: 23px;padding-bottom: 25px;position: relative;}
+.input_char23{margin-top: -90px;top: 24px;position: relative;}
+.input_char23 .ssi-buttonWrapper{top: 19px}
+.input_char23 .ssi-previewBox{margin-top: 35px;left: -150px}
 .add_input{margin-top: 10px;margin-left: 33px;}
 .input_char20{margin-left: 0;}
 .content_out{padding-top: 20px;background-color: #fff;margin-left: 0;padding-left: 23px;}
@@ -142,7 +146,7 @@ filter: alpha(opacity=0);position: absolute;}
 .load_in4 a{width: 360px;text-align: center;height: 54px;line-height: 54px;background-color: #45b1ac;color: #fff;letter-spacing: 15px;font-size: 20px;}
 .load_in4{padding-bottom: 28px;padding-top: 22px;}
 /*用户设置*/
-.content{/*height: 100%;*//*min-height: 700px;*/background-color: #fff;margin-bottom: 20px;padding-bottom: 20px;}
+.content{/*height: 100%;*//*min-height: 700px;*/background-color: #fff;margin-bottom: 20px;padding-bottom: 0px;}
 .add_example1{padding: 10px 2%;width: 96%}
 .putin ul{width: 75%;display: inline-block;}
 .putin li{display: inline-block;padding-bottom: 15px;margin-right: 20px;float: left\9;}
@@ -299,9 +303,9 @@ input.save[type="button"],a.save{background-color: #2ad17b;color: #fff}
 .excel43 td,.excel43 th{border: 1px solid #e4e3e4;padding: 24px 0;text-align: center;}
 /*main7*/
 .content71 .content_title{padding-bottom: 0;}
-.content71_main{margin-top: -19px;margin-left: 190px;padding-right: 45px;}
-.content71_main a{color: #dd7776}
-.c71_title1{width: 90%}
+.content71_main{margin-top: -19px;margin-left: 190px;padding-right: 45px;padding-bottom: 21px;position: relative;}
+.content71_main a{color: #dd7776;}
+.c71_title1{width: 80%}
 .c71_title1 img{height: 100px;}
 .c71_title1 textarea{width: 70%;height: 130px;padding: 5px;}
 .c71_title1 .c71_title1_char{top: -5px;position: relative;}
@@ -340,6 +344,7 @@ input.save[type="button"],a.save{background-color: #2ad17b;color: #fff}
 .form_title .left,.form_title .right{background: url(../img/subimg.png) no-repeat;background-size:100px 100px ;width: 50px;height: 20px;position: relative;top: -2px}
 .form_title .left{background-position: 0px -17px;}
 .form_title .right{background-position: 0px -46px;}
+/*预览*/
 .iPhone .form_title .center{padding: 0 10px;font-weight: bold;font-size: 0.9rem;}
 .i_main_in img{width: 100%;margin-bottom: 15px;}
 .form_circle{border: 1px solid #c9c9c9;border-radius: 10px;padding: 10px}
@@ -355,16 +360,18 @@ input.save[type="button"],a.save{background-color: #2ad17b;color: #fff}
 input[type="radio"],input[type="checkbox"]{margin-right: 5px;}
 .ddbot1 dd{border-bottom: 1px solid #c9c9c9;line-height: 37px}
 .form_in{padding-bottom: 20px;}
-
-
-
-
-
-
-
-
-
-
+.d_close{position: absolute;left: 320px;background-color: #fff;border-radius: 20px;}
+.iPhone .i_close{width: 32px;height: 32px;line-height: 32px;text-align: center;font-size: 20px;}
+.loading{width: 100%;height: 100%;text-align: center;position: fixed;top: 0;left: 0}
+.loading img{position: absolute;top: 50%;}
+/*main55*/
+.door{width: 70%;margin-top: -21px;position: relative;margin-left: 15%;}
+.door li{float: left;width: 25%;margin: 0 4%;text-align: center;margin-bottom: 20px;}
+.door li img{width: 100%;margin-bottom: 5px;}
+.echarts1_num{padding:15px 10%;}
+.sure55,.cancel55{width: 110px;height: 30px;line-height: 30px;text-align: center;color: #fff;background-color: #2ad17b;margin:0 15px 23px;border: 1px solid #2ad17b}
+.cancel55{background-color: #fff;color: #111114;border-color: #cecece}
+.content55{text-align: center;}
 
 
 

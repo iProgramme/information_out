@@ -84,7 +84,8 @@
 			
 		</div>
 	</div>
-<div class="bgc000 ">
+	<div class="loading"><img src="../img/loading.gif"></div>
+<div class="bgc000 disN">
 	<div class="iPhone">
 		<div class="i_main">
 			<div class="i_header">
@@ -127,12 +128,27 @@
 				</a>
 			</div>
 		</div>
+		<div class="d_close">
+			<a href="javascript:void(0)" class="i_close">×</a>
+		</div>
 	</div>
 </div>
 <script src="../js/jquery-1.8.1.min.js"></script>
 <!-- 上传图片 -->
 <script src="../js/ssi-uploader.js"></script>
 <script type="text/javascript">
+	// 关闭预览
+	$(".i_close").click(function () {
+		$(".bgc000").hide()
+	})
+	$(".operate2").click(function () {
+		$(".bgc000").show()
+	})
+	// 关闭加载
+	function t() {
+		$(".loading").fadeOut(3000)
+	}
+	t()
 	// 以下是class控制的
 	$('.ssi_upload_main').ssi_uploader({url:'#',maxFileSize:6,allowed:['jpg','gif','txt','png','pdf'],beforeUpload:function () {
 		console.log("准备")

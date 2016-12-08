@@ -108,13 +108,13 @@
 						</div>
 						<!-- 一条评论 -->
 						<!-- 输入回复评论 -->
-						<div class="response">
+						<!-- <div class="response">
 							<textarea>回复</textarea>
 							<div class="response_btn">
 								<a href="javascript:void(0)" class="response_btn1">取消</a>
 								<a href="javascript:void(0)" class="response_btn2">确定</a>
 							</div>
-						</div>
+						</div> -->
 						<!-- 输入回复评论 -->
 					</div>
 					<!-- 评论区 -->
@@ -125,10 +125,22 @@
 			<!-- 文章 -->
 		</div>
 		<!-- 饼图 -->
-		<div class="bgcfff"><div id="echarts1" class="echarts"></div></div>
+		<div class="bgcfff"><div class="echarts1_num">参与人数：500人</div><div id="echarts1" class="echarts"></div></div>
 		<!-- 饼图 -->
 	</div>
-	
+<script src="../js/jquery-1.8.1.min.js"></script>
+	<script type="text/javascript">
+		// 回复评论，改dom结构
+		$(".discuss_edit1").click(function () {
+			var response="\<div class=\"response\"\> \<textarea\>回复\</textarea\> \<div class=\"response_btn\"\> \<a href=\"javascript:void(0)\" class=\"response_btn1\"\>取消\</a\> \<a href=\"javascript:void(0)\" class=\"response_btn2\"\>确定\</a\>\</div\>\</div\>";
+			$(".response").remove();
+			$(this).parents(".discuss_list").after(response);
+			$(".response_btn1").click(function() {
+				$(".response").remove();
+			});
+		})
+		
+	</script>
 	<!-- 图表 -->
 	<script type="text/javascript">
 		// 基于准备好的dom，初始化echarts实例
