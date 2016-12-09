@@ -371,6 +371,7 @@ input[type="radio"],input[type="checkbox"]{margin-right: 5px;}
 .echarts1_num{padding:15px 10%;}
 .sure55,.cancel55{width: 110px;height: 30px;line-height: 30px;text-align: center;color: #fff;background-color: #2ad17b;margin:0 15px 23px;border: 1px solid #2ad17b}
 .cancel55{background-color: #fff;color: #111114;border-color: #cecece}
+.cancel55:hover{background-color: #dee2e8;}
 .content55{text-align: center;}
 
 
